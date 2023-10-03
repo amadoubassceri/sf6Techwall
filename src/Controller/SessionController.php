@@ -15,6 +15,7 @@ class SessionController extends AbstractController
 
         $session = $request->getSession();
 
+        // has pour savoir si le nombre de session existe
         if ($session->has('nbVisite'))
         {
             $nbreVisite  =  $session->get('nbVisite')+1;
